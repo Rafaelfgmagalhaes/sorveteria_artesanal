@@ -1,0 +1,76 @@
+.boxCards{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.areaCards{
+    width: 900px;
+    height: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: calc((900px / 3) - 20px);
+    height: 400px;
+    box-shadow: 2px 2px 8px 2px rgb(119, 119, 119);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 250px;
+    height: 200px;
+}
+
+.card h3{
+    font-size: 16px;
+    text-align: center;
+}
+
+.card p{
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+}
+
+
+@media only screen and (min-width:320px) and (max-width: 436px){
+    .areaCards{
+        width: 100%;
+        height: auto;
+    }
+
+    .card{
+        width: 90%;
+        height: 320px;
+    }
+}
+
+@media only screen and (min-width: 437px) and (max-width: 900px){
+    .areaCards{
+        width: 100%;
+        height: auto;
+    }
+
+    .card{
+        width: 80%;
+    }
+}
